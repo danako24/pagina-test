@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: montserrat;
+}
+
+
+body{
+    background-color: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    height: 80px;
+    
+}
+
+header img{
+    width: 130px;
+    margin: 70px;
+}
+
+.navbar{
+    display: flex;
+    gap: 90px;
+    padding-right: 20px;
+}
+
+.navbar li a{
+    color: white;
+    text-align: center;
+    font-size: .9375rem;
+}
+
+.inicio{
+    background-image: url(./assets/seccion2_Mesa\ de\ trabajo\ 1.png);
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    width: 100%;
+    height: 1100px;
+}
+
+.inicio div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px 900px 0 400px;
+}
+
+.inicio h1{
+    font-size:clamp(13em, 5vw, 5em);
+    font-weight: bold;
+}
+
+.inicio p{
+    font-size:clamp(1em, 1vw, 5em);
+    font-weight: 300;
+    text-align: center;
+}
+
+.boton{
+        background-color:#E01919 ;
+        border: none;
+        color: white;
+        padding: 15px 40px;  
+        text-decoration: none;
+        font-size: 1.25rem;
+        border-radius: 1.875rem;
+        margin: 30px;
+}
+
+@media (max-width:1440px){
+    .inicio{
+        display: flex;
+        width: 100%;
+        height: 900px;}
+
+        header{
+            height: 60px;}
+
+            header img{
+                width: 100px;
+                margin: 50px;
+            }
+
+            .inicio div{
+                
+                margin: 0px 500px 0 200px;}
+
+                .inicio h1{
+                    font-size:clamp(10em, 5vw, 5em);
+                    font-weight: bold;
+                }
+                
+                .inicio p{
+                    font-size:clamp(0.5em, 1vw, 5em);
+                    font-weight: 300;
+                    text-align: center;
+                }
+
+}
+
+@media (max-width:768px){
+    .inicio{
+        width: 100%;
+        height: 500px;}
+
+        header{
+        justify-content: none;
+    align-items: center;}
+
+
+        .navbar{
+            display: flex;
+            gap: 40px;
+            padding-right: 20px;
+        }
+
+        .navbar li a{
+            font-size: 10px;
+        }
+
+            header img{
+                width: 50px;
+                margin: 50px;
+            }
+
+            .inicio div{
+                
+                margin: 0px 500px 0 200px;}
+
+                .inicio h1{
+                    font-size:clamp(5em, 5vw, 5em);
+                }
+                
+                .inicio p{
+                    font-size:clamp(0.2em, 2vw, 5em);
+                    font-weight: 300;
+                }
+
+}
+
+@media (max-width:390px){
+    .inicio{
+        background-image: url(./assets/samurai\ chico_Mesa\ de\ trabajo\ 1.png);
+        width: 100%;
+        height: 250px;}
+
+        header{
+
+            height: 40px;
+            
+        }
+
+        .navbar{
+            display:none;
+        }
+
+        header img{
+            width: 40px;
+            margin: 20px;
+        }
+
+            .inicio div{
+                
+                margin: 100px 30px 0 30px;}
+
+                .inicio h1{
+                    font-size:clamp(5em, 5vw, 5em);
+
+                }
+                
+                .inicio p{
+                    font-size:6px;
+                    font-weight: 500;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    margin-bottom: -10px;
+                }
+
+                .boton{
+                    padding: 3px 10px;  
+                    font-size: 5px;
+                    border-radius: 1.875rem;
+                    margin: 20px;
+            }
+
+}
